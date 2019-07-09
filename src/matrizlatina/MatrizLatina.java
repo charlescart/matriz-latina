@@ -31,7 +31,7 @@ public class MatrizLatina {
                 }
             }
         }
-        
+        //soy oriana y oriannys y venimos a practicar por primera vez
         for(int i = 0; i < fila; i++){
             for(int j = 0; j < column; j++){
                 System.out.print(matriz[i][j]+" ");
