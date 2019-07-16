@@ -3,10 +3,15 @@ import java.util.Scanner;
 public class MatrizLatina {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int fila = 4, column = 4;
-        int matriz[][] = new int[fila][column];
+        int fila = 0, column = 0;
         
-        System.out.println(">> primeros 4 valores que conformarán su matriz latina.");
+        System.out.print(">> Introduzca el tamano de su matriz NxN: ");
+        fila = column = sc.nextInt();
+        int matriz[][] = new int[fila][column];
+       
+        System.out.println("\n>> Se construira una matriz de "+fila+"x"+column);
+        
+        System.out.println("\n>> primeros "+fila+" valores que conformarán su matriz latina.");
         for(int i = 0; i < 1; i++){
             for(int j = 0; j < column; j++){
                 System.out.print("valor en la posición["+i+"]["+j+"]: ");
@@ -14,7 +19,7 @@ public class MatrizLatina {
             }
         }
         
-        System.out.println(">> tus primeros 4 valores fueron:");
+        System.out.println("\n>> tus primeros "+fila+" valores fueron:");
         for(int i = 0; i < 1; i++){
             for(int j = 0; j < column; j++){
                 System.out.print(matriz[i][j]+" ");
